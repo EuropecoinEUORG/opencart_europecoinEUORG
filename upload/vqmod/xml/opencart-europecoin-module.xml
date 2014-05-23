@@ -1,0 +1,16 @@
+<modification>
+	<id>Makes the modifications necessary to conveniently use EuropeCoin module</id>
+	<version>1.0</version>
+	<vqmver>2.3.2</vqmver>
+	<author>EuropeCoin Developers</author>
+
+	<file name="catalog/model/checkout/order.php">
+		<operation>
+			<search position="after"><![CDATA[
+				'currency_value'          => $order_query->row['currency_value'],]]></search>
+			<add><![CDATA[
+				'europecoin_total'          => $order_query->row['europecoin_total'],
+				'europecoin_address'        => $order_query->row['europecoin_address'],]]></add>
+		</operation>
+	</file>
+</modification>
