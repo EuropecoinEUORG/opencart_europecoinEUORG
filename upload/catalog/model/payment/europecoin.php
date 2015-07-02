@@ -1,6 +1,6 @@
 <?php 
 /*
-Copyright (c) 2013 John Atkinson (jga)
+Copyright (c) 2013 John Atkinson (jga) 2015 Matthias Klees
 */
 
 class ModelPaymentEuropeCoin extends Model {
